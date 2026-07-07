@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+        <title>ScamShield AI</title>
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h2 class="logo">ScamShield AI</h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Edukasi</a></li>
+                    <li><a href="#quiz">Quiz</a></li>
+                    <li><a href="#checker">AI Checker</a></li>
+                    <li><a href="#tips">Tips</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <span class="badge">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    AI Powered Security
+                </span>
+
+                <h1>
+                    Kenali Scam Sebelum
+                    <span>Menjadi Korban</span>
+                </h1>
+
+                <p>
+                    ScamShieldAI membantu masyarakat mengenali berbagai bentuk penipuan online melalui
+                    edukasi interaktif dan anlisis berbasis Artificial Intelligence (AI).
+                </p>
+            
+
+                <div class="hero-buttons">
+                    <button id="btn-check">
+                        Coba AI Checker
+                    </button>
+                    <a href="#about" class="learn-btn">
+                        Pelajari Scam
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/hero.png" alt="Cyber Security">
+            </div>
+
+        </section>
+
+        <!-- ABOUT -->
+
+        <section id="about">
+
+            <h2>Apa itu Scam Online?</h2>
+            <p>
+                Scam Online adalah tindakan penipuan melalui internet yang bertujuan mengambil uang, data pribadi,
+                atau informasi penting milik korban.
+            </p>
+
+        </section>
+
+        <!-- JENIS SCAM -->
+
+        <section class="cards">
+            <h2>Jenis Scam yang Sering Terjadi</h2>
+
+            <div class="card-container">
+                <div class="card">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <h3>WhatsApp Scam</h3>
+
+                    <p>
+                        Pelaku mengaku keluarga, teman, atau kurir.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>Email Phishing</h3>
+
+                    <p>
+                        Email palsu yang meminta password maupun OTP.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-money-bill-trend-up"></i>
+                    <h3>Investasi Bodong</h3>
+
+                    <p>
+                        Menawarkan keuntungan yang tidak masuk akal.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h3>Marketplace Scam</h3>
+
+                    <p>
+                        Mengarahkan transaksi di luar aplikasi.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUKASI -->
+
+        <section id="education">
+            <h2>Pelajari Lebih Lanjut</h2>
+
+            <p class="education-subtitle">
+                Tingkatkan literasi digital melalui sumber resmi 
+                dari Kementrian Komunikasi dan Digital Republik Indonesia.
+            </p>
+
+            <div class="education-container">
+                <div class="education-card">
+                    <i class="fa-solid fa-book-open"></i>
+                    <h3>Literasi Digital</h3>
+
+                    <p>
+                        Pelajari cara menggunakan internet secara aman,
+                        bertanggung jawab, dan produktif.
+                    </p>
+
+                    <a href="https://www.komdigi.go.id/"
+                        target="_blank">
+                        Kunjungi Website
+                    </a>
+                </div>
+
+                <div class="education-card">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <h3>Waspada Penipuan Online</h3>
+
+                    <p>
+                        Kenali berbagai modus penipuan digital yang sedang
+                        marak terjadi di Indonesia.
+                    </p>
+
+                    <a href="https://portal.komdigi.go.id/kanal-publik/berita-kini/9115"
+                        target="_blank">
+                        Baca Artikel
+                    </a>
+                </div>
+
+                <div class="education-card">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>Keamanan Siber</h3>
+
+                    <p>
+                        Pelajari tips menjaga keamanan akun,
+                        data pribadi, dan perangkat digital.
+                    </p>
+
+                    <a href="https://csirt.komdigi.go.id/"
+                        target="_blank">
+                        Pelajari Selengkapnya
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUIZ -->
+
+        <section id="quiz">
+            <h2>🧠 Uji Pengetahuanmu!</h2>
+
+            <p class="quiz-subtitle">
+                Jawab 5 pertanyaan berikut untuk mengetahui seberapa siap 
+                kamu menghadapi berbagai modus scam online.
+            </p>
+
+            <div class="quiz-box">
+
+                <!-- Nomor Soal -->
+                <p id="question-number">
+                    Pertanyaan 1 dari 5
+                </p>
+
+                <!-- Pertanyaan -->
+                <h3 id="question"></h3>
+
+                <!-- Pilihan jawaban akan di JavaScript -->
+                <div class="answers"></div>
+
+                <!-- Hasil Akhir -->
+                <div id="quiz-result"></div>
+            </div>
+        </section>
+
+        <!-- AI -->
+
+        <section id="checker">
+            <h2>AI Scam Checker</h2>
+            <p>
+                Tempelkan pesan yang menurutmu mencurigakan.
+            </p>
+
+            <textarea id="message"
+            placeholder="Tempel chat disini ..."
+            ></textarea>
+
+            <button id="analyze">Analisis AI</button>
+
+            <div id="result">
+                Hasil analisis akan muncul disini.
+            </div>
+        </section>
+
+        <!-- TIPS -->
+
+        <section id="tips">
+            <h2>Tips Aman Berinternet</h2>
+
+            <ul>
+                <li>Jangan bagikan kode OTP.</li>
+                <li>Periksa alamat website.</li>
+                <li>Verifikasi identitas pengirim.</li>
+                <li>Jangan mudah percaya dengan hadiah yang ditawarkan.</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>
+                © 2026 ScamShield AI
+            </p>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>
